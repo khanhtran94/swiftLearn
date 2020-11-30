@@ -1,20 +1,13 @@
-class FastCar {
-    var topSpeed : Int
-    
-    init(topSpeed: Int) {
-        self.topSpeed = topSpeed
-    }
-    init() {
-        topSpeed = 0
-    }
-    func GetMiddleSpeed() -> Int {
-        return topSpeed / 2
-    }
+
+class Vehicle {
+    let numWheels = 4
 }
 
-var bugati = FastCar()
+class FamilyCar: Vehicle {
+    let numDoors = 5
+}
 
-bugati.GetMiddleSpeed()
+var myCar = FamilyCar()
 
-var ferrari = FastCar(topSpeed: 145)
-ferrari.GetMiddleSpeed()
+myCar.numDoors
+myCar.numWheels
